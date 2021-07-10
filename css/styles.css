@@ -7,6 +7,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background: white;
+}
 h1,h2,h3{
     font-family: var(--h-font);
     font-weight: 800;
@@ -44,7 +47,7 @@ p,a,li{
     nav ul li a{
         text-decoration: none;
         /* Change the colour of the Links in Navbar here */
-        color: white;
+        color: whitesmoke;
         padding: 6px 13px;
         border-radius: 8px;
         font-size: 14px;
@@ -55,7 +58,7 @@ p,a,li{
     .checkbtn{
         font-size: 30px;
         /* change colour of the hamburger icon here */
-        color: white;
+        color: whitesmoke;
         float: right;
         line-height: 80px;
         margin-right: 40px;
@@ -135,7 +138,7 @@ p,a,li{
         position: relative;
         height: 100vh;
         /* Change URL to hero-image here */
-        background: linear-gradient(90deg, rgba(227, 0, 15, 0.6) 0%, rgba(23, 89, 177, 0.69) 100%),url('https://raw.githubusercontent.com/SuryaNelakanti/visit-iceland/master/Iceland/admjnice.jpg') no-repeat center;
+        background: linear-gradient(90deg, rgba(227, 0, 15, 0.6) 0%, rgba(23, 89, 177, 0.69) 100%),url('/home/surya/Documents/WorldVisaGroup/mkII/images/bg.jpeg') no-repeat center;
     }
   
     .hero-header{
@@ -145,7 +148,7 @@ p,a,li{
         font-size: 80px;
         line-height: 84px;
         text-align: center;
-        color: white;
+        color: whitesmoke;
     }
     .hero-para{
         max-width: 750px;
@@ -154,7 +157,7 @@ p,a,li{
         font-size: 24px;
         line-height: 29px;
         text-align: center;
-        color: white;
+        color: whitesmoke;
     }
     .hero-button-container{
         width: 100%;
@@ -167,7 +170,7 @@ p,a,li{
         font-size: 18px;
         font-weight: 700;
         border-radius: 0px;
-        background-color: white;
+        background-color: whitesmoke;
         border: 1px solid gray;
         width: 170px;
         height: 55px;
@@ -176,7 +179,7 @@ p,a,li{
     }
     #hero-button:hover{
         background-color: transparent;
-        border: 1px solid white;
+        border: 1px solid whitesmoke;
         transition: 0.5s;
         color: white;
     }
@@ -220,7 +223,7 @@ p,a,li{
         height: 300px;
         border-radius: 20px;
         border: 1px solid grey;
-        box-shadow: 0px 4px 11px 2px #00000026;
+        box-shadow: 0px 4px 11px 0px #00000026;
         background: #C7000D;        
         color: white;
         display: flex;
@@ -254,39 +257,52 @@ p,a,li{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        background: #EFEFEF;
+        justify-content: space-evenly;
+        background: linear-gradient(90deg,rgba(23, 89, 177, 0.69) 10%, rgba(227, 0, 15, 0.6) 90% );
+        background: #efefefd8;
+        box-shadow: 0 0 20px 1px grey;
         margin-top: 300px;
         margin-bottom: 100px;
+        border-radius: 20px;
     }
     .offset-photo{
         justify-content: flex-start;
         position: relative;
         top: -50px;
         left: -100px;
+        border-radius: 20px;
     }
+    #offset-photo{
+        border-radius: 20px;
+    }
+
     .offset-text-container{
         width: 400px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 30px;
-        text-align: center;
+        margin-top: 40px;
+        text-align: left;
     }
     .offset-header{
         width: 100%;
-        text-align: center;
+        text-align: left;
+        line-height: 34px;
+        font-family: var(--h-font);
+        font-weight: 800;
+        margin-bottom: 40px;
     }
     .offset-text{
-        text-align: center;
+        text-align: left;
         width: 200px;
         height: 150px;
         font-size: 14px;
     }
     .offset-text h2{
-        text-align: center;
+        text-align: left;
         font-size: 18px;
+        font-family: var(--p-font);
+        font-weight: 800;
     }
 /* Button Container */
     .button-container{
@@ -303,6 +319,7 @@ p,a,li{
         align-items: center;
         font-size: 30px;
         text-align: center;
+        background-color: white;
     }
     .button-container p{
         margin-top: 20px;
